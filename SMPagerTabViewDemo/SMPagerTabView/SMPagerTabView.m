@@ -28,6 +28,7 @@
 @property (nonatomic, strong) UIView* selectedLine;
 @property (nonatomic, assign) CGFloat selectedLineOffsetXBeforeMoving;
 
+
 @end
 
 @implementation SMPagerTabView
@@ -83,10 +84,10 @@
 }
 - (void)layoutSubviews {
     if (_isBuildUI) {
-        self.bodyScrollView.contentSize = CGSizeMake(self.width * [self.viewsArray count], self.tabFrameHeight);
+        self.bodyScrollView.contentSize = CGSizeMake(self.width * [self.viewsArray count], self.tabFrameHeight + self.bodyMargin);
         for (int i = 0; i < [self.viewsArray count]; i++) {
             UIViewController* vc = self.viewsArray[i];
-            vc.view.frame = CGRectMake(self.bodyScrollView.width * i, self.tabFrameHeight, self.bodyScrollView.width, self.bodyScrollView.height);
+            vc.view.frame = CGRectMake(self.bodyScrollView.width * i, self.tabFrameHeight + self.bodyMargin, self.bodyScrollView.width, self.bodyScrollView.height);
         }
     }
 }
@@ -298,7 +299,7 @@
 - (UIView *)selectedLine {
     if (!_selectedLine) {
         self.selectedLine = [[UIView alloc] initWithFrame:CGRectMake(0, self.tabView.height - 2, self.selectedLineWidth, 2)];
-        _selectedLine.backgroundColor = [UIColor redColor];
+        _selectedLine.backgroundColor = self.selectedLineColor;
         [self addSubview:_selectedLine];
     }
     return _selectedLine;
@@ -309,6 +310,13 @@
     }
     return _selectedLineWidth;
 }
+- (UIColor *)selectedLineColor {
+    if (!_selectedLineColor) {
+        self.selectedLineColor = [UIColor redColor];
+    }
+    return _selectedLineColor;
+}
+
 - (CGFloat)selectedLineOffsetXBeforeMoving {
     if (!_selectedLineOffsetXBeforeMoving) {
         self.selectedLineOffsetXBeforeMoving = 0;
@@ -316,13 +324,19 @@
     return _selectedLineOffsetXBeforeMoving;
 }
 
+- (CGFloat)bodyMargin {
+    if (!_bodyMargin) {
+        self.bodyMargin = 0.0;
+    }
+    return _bodyMargin;
+}
 
 /*!
  * @brief 滑动pager主体
  */
 - (UIScrollView*)bodyScrollView {
     if (!_bodyScrollView) {
-        self.bodyScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, _tabFrameHeight, self.width, self.height - _tabFrameHeight)];
+        self.bodyScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, _tabFrameHeight + self.bodyMargin, self.width, self.height - _tabFrameHeight - self.bodyMargin)];
         _bodyScrollView.delegate = self;
         _bodyScrollView.pagingEnabled = YES;
         _bodyScrollView.userInteractionEnabled = YES;

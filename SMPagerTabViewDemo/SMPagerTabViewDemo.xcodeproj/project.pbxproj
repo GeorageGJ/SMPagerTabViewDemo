@@ -22,6 +22,8 @@
 		561C6E661E5F606200B3DA0B /* SMPagerTabViewDemo-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 561C6E4B1E5F603300B3DA0B /* SMPagerTabViewDemo-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		561C6E671E5F606C00B3DA0B /* SMPagerTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 561C6E4D1E5F603300B3DA0B /* SMPagerTabView.m */; };
 		561C6E681E5F606C00B3DA0B /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 561C6E4F1E5F603300B3DA0B /* UIViewAdditions.m */; };
+		561C6E921E5F7FBC00B3DA0B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C6E901E5F7FBC00B3DA0B /* TestViewController.swift */; };
+		561C6E931E5F7FBC00B3DA0B /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561C6E911E5F7FBC00B3DA0B /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		561C6E571E5F605700B3DA0B /* SMPagerTabView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMPagerTabView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		561C6E591E5F605700B3DA0B /* SMPagerTabViewFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPagerTabViewFramework.h; sourceTree = "<group>"; };
 		561C6E5A1E5F605700B3DA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		561C6E901E5F7FBC00B3DA0B /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		561C6E911E5F7FBC00B3DA0B /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				561C6E3F1E5F601F00B3DA0B /* Assets.xcassets */,
 				561C6E411E5F601F00B3DA0B /* LaunchScreen.storyboard */,
 				561C6E441E5F601F00B3DA0B /* Info.plist */,
+				561C6E901E5F7FBC00B3DA0B /* TestViewController.swift */,
+				561C6E911E5F7FBC00B3DA0B /* TestViewController.xib */,
 			);
 			path = SMPagerTabViewDemo;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			files = (
 				561C6E431E5F601F00B3DA0B /* LaunchScreen.storyboard in Resources */,
 				561C6E401E5F601F00B3DA0B /* Assets.xcassets in Resources */,
+				561C6E931E5F7FBC00B3DA0B /* TestViewController.xib in Resources */,
 				561C6E3E1E5F601F00B3DA0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561C6E921E5F7FBC00B3DA0B /* TestViewController.swift in Sources */,
 				561C6E511E5F603300B3DA0B /* UIViewAdditions.m in Sources */,
 				561C6E3B1E5F601F00B3DA0B /* ViewController.swift in Sources */,
 				561C6E501E5F603300B3DA0B /* SMPagerTabView.m in Sources */,
@@ -488,6 +496,7 @@
 				561C6E491E5F601F00B3DA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		561C6E601E5F605700B3DA0B /* Build configuration list for PBXNativeTarget "SMPagerTabViewFramework" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				561C6E621E5F605700B3DA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

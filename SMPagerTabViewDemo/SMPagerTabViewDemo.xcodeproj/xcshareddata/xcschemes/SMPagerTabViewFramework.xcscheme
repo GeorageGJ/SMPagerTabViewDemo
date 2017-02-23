@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "561C6E561E5F605700B3DA0B"
-               BuildableName = "SMPagerTabViewFramework.framework"
+               BuildableName = "SMPagerTabView.framework"
                BlueprintName = "SMPagerTabViewFramework"
                ReferencedContainer = "container:SMPagerTabViewDemo.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "561C6E561E5F605700B3DA0B"
-            BuildableName = "SMPagerTabViewFramework.framework"
+            BuildableName = "SMPagerTabView.framework"
             BlueprintName = "SMPagerTabViewFramework"
             ReferencedContainer = "container:SMPagerTabViewDemo.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "561C6E561E5F605700B3DA0B"
-            BuildableName = "SMPagerTabViewFramework.framework"
+            BuildableName = "SMPagerTabView.framework"
             BlueprintName = "SMPagerTabViewFramework"
             ReferencedContainer = "container:SMPagerTabViewDemo.xcodeproj">
          </BuildableReference>

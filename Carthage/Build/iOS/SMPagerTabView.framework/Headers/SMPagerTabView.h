@@ -22,6 +22,9 @@
 @property (nonatomic, assign) UIColor* tabButtonTitleColorForNormal;
 @property (nonatomic, assign) UIColor* tabButtonTitleColorForSelected;
 @property (nonatomic, assign) CGFloat selectedLineWidth; //下划线的宽
+@property (nonatomic, strong) UIColor* selectedLineColor; // 下划线的颜色
+@property (nonatomic, assign) CGFloat bodyMargin; //scrollView与头部tab的bottom的间隔
+
 
 /*!
  * @brief 自定义完毕后开始build UI

@@ -1,0 +1,146 @@
+BCSymbolMap Version: 2.0
+-[SMPagerTabView buildUI]
+-[SMPagerTabView buttonTitleRealSize:]
+-[SMPagerTabView layoutSubviews]
+-[SMPagerTabView onTabButtonSelected:]
+-[SMPagerTabView selectTabWithIndex:animate:]
+___45-[SMPagerTabView selectTabWithIndex:animate:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+___45-[SMPagerTabView selectTabWithIndex:animate:]_block_invoke.119
+___copy_helper_block_.120
+___destroy_helper_block_.121
+-[SMPagerTabView moveSelectedLineByScrollWithOffsetX:]
+-[SMPagerTabView showRedDotWithIndex:]
+-[SMPagerTabView hideRedDotWithIndex:]
+-[SMPagerTabView switchWithIndex:animate:]
+-[SMPagerTabView scrollViewWillBeginDragging:]
+-[SMPagerTabView scrollViewDidScroll:]
+-[SMPagerTabView scrollViewDidEndDecelerating:]
+-[SMPagerTabView scrollViewDidEndScrollingAnimation:]
+-[SMPagerTabView tabView]
+-[SMPagerTabView tabButtons]
+-[SMPagerTabView tabRedDots]
+-[SMPagerTabView tabFrameHeight]
+-[SMPagerTabView tabMargin]
+-[SMPagerTabView currentTabSelected]
+-[SMPagerTabView tabBackgroundColor]
+-[SMPagerTabView tabButtonFontSize]
+-[SMPagerTabView tabButtonTitleColorForNormal]
+-[SMPagerTabView tabButtonTitleColorForSelected]
+-[SMPagerTabView selectedLine]
+-[SMPagerTabView selectedLineWidth]
+-[SMPagerTabView selectedLineColor]
+-[SMPagerTabView selectedLineOffsetXBeforeMoving]
+-[SMPagerTabView bodyMargin]
+-[SMPagerTabView bodyScrollView]
+-[SMPagerTabView viewsArray]
+-[SMPagerTabView delegate]
+-[SMPagerTabView setDelegate:]
+-[SMPagerTabView setTabFrameHeight:]
+-[SMPagerTabView setTabBackgroundColor:]
+-[SMPagerTabView setTabButtonFontSize:]
+-[SMPagerTabView setTabMargin:]
+-[SMPagerTabView setTabButtonTitleColorForNormal:]
+-[SMPagerTabView setTabButtonTitleColorForSelected:]
+-[SMPagerTabView setSelectedLineWidth:]
+-[SMPagerTabView setSelectedLineColor:]
+-[SMPagerTabView setBodyMargin:]
+-[SMPagerTabView setBodyScrollView:]
+-[SMPagerTabView setViewsArray:]
+-[SMPagerTabView continueDraggingNumber]
+-[SMPagerTabView setContinueDraggingNumber:]
+-[SMPagerTabView startOffsetX]
+-[SMPagerTabView setStartOffsetX:]
+-[SMPagerTabView setCurrentTabSelected:]
+-[SMPagerTabView isBuildUI]
+-[SMPagerTabView setIsBuildUI:]
+-[SMPagerTabView isUseDragging]
+-[SMPagerTabView setIsUseDragging:]
+-[SMPagerTabView isEndDecelerating]
+-[SMPagerTabView setIsEndDecelerating:]
+-[SMPagerTabView setTabView:]
+-[SMPagerTabView tabSelectedLine]
+-[SMPagerTabView setTabSelectedLine:]
+-[SMPagerTabView setTabButtons:]
+-[SMPagerTabView setTabRedDots:]
+-[SMPagerTabView setSelectedLine:]
+-[SMPagerTabView setSelectedLineOffsetXBeforeMoving:]
+-[SMPagerTabView .cxx_destruct]
+_OBJC_IVAR_$_SMPagerTabView._isBuildUI
+_OBJC_IVAR_$_SMPagerTabView._isUseDragging
+_OBJC_IVAR_$_SMPagerTabView._isEndDecelerating
+_OBJC_IVAR_$_SMPagerTabView._startOffsetX
+_OBJC_IVAR_$_SMPagerTabView._continueDraggingNumber
+_OBJC_IVAR_$_SMPagerTabView._currentTabSelected
+___block_descriptor_tmp
+___block_descriptor_tmp.122
+_OBJC_IVAR_$_SMPagerTabView._selectedLineOffsetXBeforeMoving
+_OBJC_IVAR_$_SMPagerTabView._tabView
+_OBJC_IVAR_$_SMPagerTabView._tabFrameHeight
+_OBJC_IVAR_$_SMPagerTabView._tabButtons
+_OBJC_IVAR_$_SMPagerTabView._tabRedDots
+_OBJC_IVAR_$_SMPagerTabView._tabMargin
+_OBJC_IVAR_$_SMPagerTabView._tabBackgroundColor
+_OBJC_IVAR_$_SMPagerTabView._tabButtonFontSize
+_OBJC_IVAR_$_SMPagerTabView._tabButtonTitleColorForNormal
+_OBJC_IVAR_$_SMPagerTabView._tabButtonTitleColorForSelected
+_OBJC_IVAR_$_SMPagerTabView._selectedLine
+_OBJC_IVAR_$_SMPagerTabView._selectedLineWidth
+_OBJC_IVAR_$_SMPagerTabView._selectedLineColor
+_OBJC_IVAR_$_SMPagerTabView._bodyMargin
+_OBJC_IVAR_$_SMPagerTabView._bodyScrollView
+_OBJC_IVAR_$_SMPagerTabView._viewsArray
+_OBJC_IVAR_$_SMPagerTabView._delegate
+_OBJC_IVAR_$_SMPagerTabView._tabSelectedLine
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+/Users/sevenwang/Desktop/SwiftTest/SMPagerTabViewDemo/SMPagerTabViewDemo/SMPagerTabView/SMPagerTabView.m
+/Users/sevenwang/Desktop/SwiftTest/SMPagerTabViewDemo/SMPagerTabViewDemo
+/Users/sevenwang/Desktop/SwiftTest/SMPagerTabViewDemo/SMPagerTabViewDemo/SMPagerTabView/SMPagerTabView.h
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+CGPointMake
+__destroy_helper_block_
+__copy_helper_block_
+__45-[SMPagerTabView selectTabWithIndex:animate:]_block_invoke.119
+__45-[SMPagerTabView selectTabWithIndex:animate:]_block_invoke
+CGSizeMake
+-[UIView(TTCategory) visible]
+-[UIView(TTCategory) setVisible:]
+-[UIView(TTCategory) left]
+-[UIView(TTCategory) setLeft:]
+-[UIView(TTCategory) top]
+-[UIView(TTCategory) setTop:]
+-[UIView(TTCategory) right]
+-[UIView(TTCategory) setRight:]
+-[UIView(TTCategory) bottom]
+-[UIView(TTCategory) setBottom:]
+-[UIView(TTCategory) centerX]
+-[UIView(TTCategory) setCenterX:]
+-[UIView(TTCategory) centerY]
+-[UIView(TTCategory) setCenterY:]
+-[UIView(TTCategory) width]
+-[UIView(TTCategory) setWidth:]
+-[UIView(TTCategory) height]
+-[UIView(TTCategory) setHeight:]
+-[UIView(TTCategory) screenX]
+-[UIView(TTCategory) screenY]
+-[UIView(TTCategory) screenViewX]
+-[UIView(TTCategory) screenViewY]
+-[UIView(TTCategory) screenFrame]
+-[UIView(TTCategory) origin]
+-[UIView(TTCategory) setOrigin:]
+-[UIView(TTCategory) size]
+-[UIView(TTCategory) setSize:]
+-[UIView(TTCategory) offsetFromView:]
+-[UIView(TTCategory) descendantOrSelfWithClass:]
+-[UIView(TTCategory) ancestorOrSelfWithClass:]
+-[UIView(TTCategory) removeAllSubviews]
+-[UIView(TTCategory) viewController]
+-[UIView(TTCategory) addSubviews:]
+/Users/sevenwang/Desktop/SwiftTest/SMPagerTabViewDemo/SMPagerTabViewDemo/SMPagerTabView/UIViewAdditions.m
+/Users/sevenwang/Library/Developer/Xcode/DerivedData/SMPagerTabViewDemo-budmdrbrrtpjbnhaaxcvgjmdnmdf/Build/Intermediates/SMPagerTabViewDemo.build/Release-iphoneos/SMPagerTabViewFramework.build/DerivedSources/SMPagerTabView_vers.c
