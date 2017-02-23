@@ -1,0 +1,6 @@
+framework module SMPagerTabView {
+  umbrella header "SMPagerTabView.h"
+
+  export *
+  module * { export * }
+}
