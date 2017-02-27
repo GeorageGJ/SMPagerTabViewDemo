@@ -84,6 +84,7 @@
 }
 - (void)layoutSubviews {
     if (_isBuildUI) {
+        self.tabView.frame = CGRectMake(0, 0, self.width, self.tabFrameHeight);
         self.bodyScrollView.frame = CGRectMake(0, _tabFrameHeight + self.bodyMargin, self.width, self.height - _tabFrameHeight - self.bodyMargin);
         self.bodyScrollView.contentSize = CGSizeMake(self.width * [self.viewsArray count], self.tabFrameHeight + self.bodyMargin);
         for (int i = 0; i < [self.viewsArray count]; i++) {

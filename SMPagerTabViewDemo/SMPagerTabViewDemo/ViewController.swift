@@ -42,6 +42,7 @@ class ViewController: UIViewController,SMPagerTabViewDelegate {
         pagerSuperView.addSubview(pagerTabView)
         pagerTabView.delegate = self
         pagerTabView.tabButtonFontSize = 13
+        pagerTabView.tabFrameHeight = 50
         pagerTabView.tabBackgroundColor = UIColor.white
         pagerTabView.tabButtonTitleColorForSelected = UIColor.blue
         pagerTabView.tabButtonTitleColorForNormal = UIColor.gray
