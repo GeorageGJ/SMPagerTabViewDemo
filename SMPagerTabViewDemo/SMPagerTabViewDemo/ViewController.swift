@@ -48,7 +48,7 @@ class ViewController: UIViewController,SMPagerTabViewDelegate {
         pagerTabView.selectedLineWidth = pagerSuperView.frame.width / 4.0
         pagerTabView.tabMargin = 0.1
         pagerTabView.selectedLineColor = UIColor.blue
-        pagerTabView.bodyMargin = 2
+        pagerTabView.bodyMargin = 8
         pagerTabView.backgroundColor = UIColor.gray
         
         pagerTabView.buildUI()
