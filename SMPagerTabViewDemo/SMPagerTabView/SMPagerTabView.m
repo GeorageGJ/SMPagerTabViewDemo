@@ -87,7 +87,7 @@
         self.bodyScrollView.contentSize = CGSizeMake(self.width * [self.viewsArray count], self.tabFrameHeight + self.bodyMargin);
         for (int i = 0; i < [self.viewsArray count]; i++) {
             UIViewController* vc = self.viewsArray[i];
-            vc.view.frame = CGRectMake(self.bodyScrollView.width * i, self.tabFrameHeight + self.bodyMargin, self.bodyScrollView.width, self.bodyScrollView.height);
+            vc.view.frame = CGRectMake(self.bodyScrollView.width * i, self.tabFrameHeight + self.bodyMargin, self.bodyScrollView.width, self.bodyScrollView.height - self.tabFrameHeight - self.bodyMargin);
         }
     }
 }

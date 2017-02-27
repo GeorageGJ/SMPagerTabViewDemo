@@ -41,8 +41,6 @@ class ViewController: UIViewController,SMPagerTabViewDelegate {
         pagerTabView = SMPagerTabView.init(frame: CGRect.init(x: 0, y: 0, width: pagerSuperView.frame.width, height: pagerSuperView.frame.height))
         pagerSuperView.addSubview(pagerTabView)
         pagerTabView.delegate = self
-        
-//        pagerTabView.tabFrameHeight = 44.0
         pagerTabView.tabButtonFontSize = 13
         pagerTabView.tabBackgroundColor = UIColor.white
         pagerTabView.tabButtonTitleColorForSelected = UIColor.blue
@@ -55,7 +53,6 @@ class ViewController: UIViewController,SMPagerTabViewDelegate {
         
         pagerTabView.buildUI()
         pagerTabView.selectTab(with: 0, animate: false)
-        //        pagerTabView.hideRedDot(with: 0)
     }
 
     func number(ofPagers view: SMPagerTabView!) -> UInt {
