@@ -27,6 +27,30 @@ class ViewController: UIViewController,SMPagerTabViewDelegate {
         return [one,two,three,four]
     }()
 
+    let titles:[NSMutableAttributedString] = {
+        let one:NSMutableAttributedString = NSMutableAttributedString.init(string: "文章（99）")
+        one.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
+        let two:NSMutableAttributedString = NSMutableAttributedString.init(string: "问答（0）")
+        two.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
+        let three:NSMutableAttributedString = NSMutableAttributedString.init(string: "医生（9）")
+        three.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
+        let four:NSMutableAttributedString = NSMutableAttributedString.init(string: "医院（999）")
+        four.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
+        return [one,two,three,four]
+    }()
+    let titlesOnSelectedState:[NSMutableAttributedString] = {
+        let one:NSMutableAttributedString = NSMutableAttributedString.init(string: "文章（99）")
+        one.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
+        let two:NSMutableAttributedString = NSMutableAttributedString.init(string: "问答（0）")
+        two.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
+        let three:NSMutableAttributedString = NSMutableAttributedString.init(string: "医生（9）")
+        three.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
+        let four:NSMutableAttributedString = NSMutableAttributedString.init(string: "医院（999）")
+        four.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
+        return [one,two,three,four]
+    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setView()
@@ -66,6 +90,14 @@ class ViewController: UIViewController,SMPagerTabViewDelegate {
         return self.pages[index]
     }
 
+    func tabAttributedTitleOfPagers(onNormalState view: SMPagerTabView!, indexOfPagers number: UInt) -> NSAttributedString! {
+        let index:Int = Int(number)
+        return self.titles[index]
+    }
+    func tabAttributedTitleOfPagers(onSelectedState view: SMPagerTabView!, indexOfPagers number: UInt) -> NSAttributedString! {
+        let index:Int = Int(number)
+        return self.titlesOnSelectedState[index]
+    }
 
 }
 

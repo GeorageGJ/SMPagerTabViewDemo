@@ -24,6 +24,7 @@
 		561C6E681E5F606C00B3DA0B /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 561C6E4F1E5F603300B3DA0B /* UIViewAdditions.m */; };
 		561C6E921E5F7FBC00B3DA0B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C6E901E5F7FBC00B3DA0B /* TestViewController.swift */; };
 		561C6E931E5F7FBC00B3DA0B /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561C6E911E5F7FBC00B3DA0B /* TestViewController.xib */; };
+		567F085B1E65DFF200CE7A71 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F085A1E65DFF200CE7A71 /* AttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		561C6E5A1E5F605700B3DA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561C6E901E5F7FBC00B3DA0B /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		561C6E911E5F7FBC00B3DA0B /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		567F085A1E65DFF200CE7A71 /* AttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				561C6E441E5F601F00B3DA0B /* Info.plist */,
 				561C6E901E5F7FBC00B3DA0B /* TestViewController.swift */,
 				561C6E911E5F7FBC00B3DA0B /* TestViewController.xib */,
+				567F085A1E65DFF200CE7A71 /* AttributedString.swift */,
 			);
 			path = SMPagerTabViewDemo;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				567F085B1E65DFF200CE7A71 /* AttributedString.swift in Sources */,
 				561C6E921E5F7FBC00B3DA0B /* TestViewController.swift in Sources */,
 				561C6E511E5F603300B3DA0B /* UIViewAdditions.m in Sources */,
 				561C6E3B1E5F601F00B3DA0B /* ViewController.swift in Sources */,

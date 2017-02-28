@@ -47,15 +47,22 @@
         [self.viewsArray addObject:vc];
         [self.bodyScrollView addSubview:vc.view];
         
+        NSAttributedString *attributedTitleOnNormalState = [self.delegate tabAttributedTitleOfPagersOnNormalState:self indexOfPagers:i];
+        NSAttributedString *attributedTitleOnSelectedState = [self.delegate tabAttributedTitleOfPagersOnSelectedState:self indexOfPagers:i];
         //tab上按钮
         UIButton* itemButton = [UIButton buttonWithType:UIButtonTypeCustom];
         CGFloat itemButtonWidth = (self.width - self.tabMargin*2)/number;
         [itemButton setFrame:CGRectMake(self.tabMargin + itemButtonWidth*i, 0, itemButtonWidth, self.tabFrameHeight)];
         [itemButton.titleLabel setBaselineAdjustment:UIBaselineAdjustmentAlignCenters];
         [itemButton.titleLabel setFont:[UIFont systemFontOfSize:self.tabButtonFontSize]];
-        [itemButton setTitle:vc.title forState:UIControlStateNormal];
-        [itemButton setTitleColor:self.tabButtonTitleColorForNormal forState:UIControlStateNormal];
-        [itemButton setTitleColor:self.tabButtonTitleColorForSelected forState:UIControlStateSelected];
+        if (attributedTitleOnNormalState != nil) {
+            [itemButton setAttributedTitle:attributedTitleOnNormalState forState:UIControlStateNormal];
+            [itemButton setAttributedTitle:attributedTitleOnSelectedState forState:UIControlStateSelected];
+        }else{
+            [itemButton setTitle:vc.title forState:UIControlStateNormal];
+            [itemButton setTitleColor:self.tabButtonTitleColorForNormal forState:UIControlStateNormal];
+            [itemButton setTitleColor:self.tabButtonTitleColorForSelected forState:UIControlStateSelected];
+        }
         [itemButton addTarget:self action:@selector(onTabButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
         itemButton.tag = i;
         [self.tabButtons addObject:itemButton];
