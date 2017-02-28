@@ -32,7 +32,17 @@
 @end
 
 @implementation SMPagerTabView
-
+- (void)reloadTabTitle:(NSArray *)titlesOnNormalState titles:(NSArray *)titlesOnSelectedState {
+    for (int i = 0; i < self.tabButtons.count; i++) {
+        UIButton *button = self.tabButtons[i];
+        if (titlesOnNormalState != nil && titlesOnNormalState.count > 0) {
+            [button setAttributedTitle:titlesOnNormalState[i] forState:UIControlStateNormal];
+        }
+        if (titlesOnSelectedState != nil && titlesOnSelectedState.count > 0) {
+            [button setAttributedTitle:titlesOnSelectedState[i] forState:UIControlStateSelected];
+        }
+    }
+}
 - (void)buildUI {
     _isBuildUI = NO;
     _isUseDragging = NO;

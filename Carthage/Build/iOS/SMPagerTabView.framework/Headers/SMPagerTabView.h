@@ -44,6 +44,11 @@
 - (UIViewController *)pagerViewOfPagers:(SMPagerTabView *)view indexOfPagers:(NSUInteger)number;
 @optional
 /*!
+ * @brief 设置头部tab的Attributed Title 
+ */
+- (NSAttributedString *)tabAttributedTitleOfPagersOnNormalState:(SMPagerTabView *)view indexOfPagers:(NSUInteger)number;
+- (NSAttributedString *)tabAttributedTitleOfPagersOnSelectedState:(SMPagerTabView *)view indexOfPagers:(NSUInteger)number;
+/*!
  * @brief 切换到不同pager可执行的事件
  */
 - (void)whenSelectOnPager:(NSUInteger)number;

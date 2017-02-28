@@ -28,24 +28,24 @@ class ViewController: UIViewController,SMPagerTabViewDelegate {
     }()
 
     let titles:[NSMutableAttributedString] = {
-        let one:NSMutableAttributedString = NSMutableAttributedString.init(string: "文章（99）")
+        let one:NSMutableAttributedString = NSMutableAttributedString.init(string: "文章(99)")
         one.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
-        let two:NSMutableAttributedString = NSMutableAttributedString.init(string: "问答（0）")
+        let two:NSMutableAttributedString = NSMutableAttributedString.init(string: "问答(99)")
         two.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
-        let three:NSMutableAttributedString = NSMutableAttributedString.init(string: "医生（9）")
+        let three:NSMutableAttributedString = NSMutableAttributedString.init(string: "医生(99)")
         three.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
-        let four:NSMutableAttributedString = NSMutableAttributedString.init(string: "医院（999）")
+        let four:NSMutableAttributedString = NSMutableAttributedString.init(string: "医院(99)")
         four.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange.init(location: 0, length: 2))
         return [one,two,three,four]
     }()
     let titlesOnSelectedState:[NSMutableAttributedString] = {
-        let one:NSMutableAttributedString = NSMutableAttributedString.init(string: "文章（99）")
+        let one:NSMutableAttributedString = NSMutableAttributedString.init(string: "文章(992)")
         one.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
-        let two:NSMutableAttributedString = NSMutableAttributedString.init(string: "问答（0）")
+        let two:NSMutableAttributedString = NSMutableAttributedString.init(string: "问答(990)")
         two.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
-        let three:NSMutableAttributedString = NSMutableAttributedString.init(string: "医生（9）")
+        let three:NSMutableAttributedString = NSMutableAttributedString.init(string: "医生(0)")
         three.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
-        let four:NSMutableAttributedString = NSMutableAttributedString.init(string: "医院（999）")
+        let four:NSMutableAttributedString = NSMutableAttributedString.init(string: "医院(999)")
         four.addAttribute(NSForegroundColorAttributeName, value: UIColor.blue, range: NSRange.init(location: 0, length: 2))
         return [one,two,three,four]
     }()
