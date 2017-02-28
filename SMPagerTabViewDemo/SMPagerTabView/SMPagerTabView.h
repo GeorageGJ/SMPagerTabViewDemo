@@ -36,6 +36,10 @@
 - (void)selectTabWithIndex:(NSUInteger)index animate:(BOOL)isAnimate;
 - (void)showRedDotWithIndex:(NSUInteger)index;
 - (void)hideRedDotWithIndex:(NSUInteger)index;
+/*!
+ * @brief 刷新title
+ */
+- (void)reloadTabTitle:(NSArray *)titlesOnNormalState titles:(NSArray *)titlesOnSelectedState;
 @end
 
 @protocol SMPagerTabViewDelegate <NSObject>
